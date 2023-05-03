@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #007bff; /* Azzurro */
+    padding: 1rem;
+  }
+  
+  .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .navbar li {
+    display: inline;
+  }
+  
+  .navbar a {
+    color: #ffffff; /* Bianco */
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar a:hover {
+    color: #ff7f00; /* Arancione */
+  }
+  
+  .navbar button {
+    color: #ffffff; /* Bianco */
+    background-color: #ff7f00; /* Arancione */
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+  }
+  
+  .navbar button:hover {
+    background-color: #cc6600; /* Arancione scuro */
+  }
+  
