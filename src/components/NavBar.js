@@ -22,6 +22,9 @@ const NavBar = () => {
           <Link to="/">Dashboard</Link>
         </li>
         <li>
+        <Link to="/candidates">Candidati</Link>
+        </li>
+        <li>
           <Link to="/admin">Pannello di Amministrazione</Link>
         </li>
         <li>

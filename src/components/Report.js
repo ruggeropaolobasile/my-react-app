@@ -8,13 +8,13 @@ const Report = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const statusResponse = await axios.get('/api/report/status');
+      const statusResponse = await axios.get('http://localhost:5127/api/report/status');
       setStatusData(statusResponse.data);
 
-      const positionResponse = await axios.get('/api/report/position');
+      const positionResponse = await axios.get('http://localhost:5127/api/report/position');
       setPositionData(positionResponse.data);
 
-      const monthResponse = await axios.get('/api/report/month');
+      const monthResponse = await axios.get('http://localhost:5127/api/report/month');
       setMonthData(monthResponse.data);
     };
 

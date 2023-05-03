@@ -40,7 +40,7 @@ const Dashboard = () => {
               <td>{interview.interviewDate}</td>
               <td>{interview.status}</td>
               <td>
-                <Link to={`/edit/${interview.id}`}>
+                <Link to={`/edit-interview/${interview.id}`}>
                   <button>Modifica</button>
                 </Link>
               </td>
