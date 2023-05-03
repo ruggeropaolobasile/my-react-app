@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import InterviewList from './InterviewList';
 import { Link } from 'react-router-dom';
 import Report from './Report';
 
