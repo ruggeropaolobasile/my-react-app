@@ -27,6 +27,8 @@ const NavBar = () => {
      
         <Link to="/job-offers">Offerte di lavoro</Link>
 
+        <Link to="/add-job-offer">Aggiungi Offerta di Lavoro</Link>
+
         <Link to="/signin">SignIN</Link>
         
         <button onClick={logout}>Logout</button>

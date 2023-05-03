@@ -1,0 +1,40 @@
+/* Stile per il form */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  /* Stile per i label */
+  label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: 14px;
+  }
+  
+  /* Stile per gli input */
+  input {
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Stile per i bottoni */
+  button {
+    padding: 10px 20px;
+    background-color: #0077FF;
+    color: #fff;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0052CC;
+  }
+  
