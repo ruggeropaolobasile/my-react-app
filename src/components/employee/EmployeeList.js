@@ -1,12 +1,12 @@
-// server  http://localhost:5127/api/
-
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import EmployeeForm from './EmployeeForm';
+import AddEmployee from './AddEmployee';
 
 const EmployeeList = () => {
   const [employees, setEmployees] = useState([]);
   const [selectedEmployee, setSelectedEmployee] = useState(null);
+  const [showAddEmployee, setShowAddEmployee] = useState(false);
 
   const fetchEmployees = async () => {
     const response = await axios.get('http://localhost:5127/api/employee');
@@ -32,9 +32,19 @@ const EmployeeList = () => {
     fetchEmployees();
   };
 
+  const handleAddEmployee = async (newEmployee) => {
+    await axios.post('http://localhost:5127/api/employee', newEmployee);
+    fetchEmployees();
+    setShowAddEmployee(false);
+  };
+
   return (
     <div className="employee-list">
       <h2>Dipendenti</h2>
+      <button onClick={() => setShowAddEmployee(!showAddEmployee)}>
+        {showAddEmployee ? 'Annulla' : 'Nuovo Dipendente'}
+      </button>
+      {showAddEmployee && <AddEmployee onAddEmployee={handleAddEmployee} />}
       <table>
         <thead>
           <tr>
