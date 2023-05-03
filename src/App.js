@@ -3,13 +3,14 @@ import Dashboard from './components/Dashboard';
 import AdminPanel from './components/AdminPanel';
 import SignIn from './components/SignIn';
 import SignUp from './components/SignUp';
-import EditInterview from './components/EditInterview';
+import EditInterview from './components/interview/EditInterview';
 import NavBar from './components/NavBar';
-import AddCandidate from './components/AddCandidate'; // aggiungi questa riga
+import AddCandidate from './components/candidate/AddCandidate'; // aggiungi questa riga
 
 import { BrowserRouter as Router } from 'react-router-dom';
 import { useRoutes, Navigate } from 'react-router-dom';
-import Candidates from './components/CandidatesList';
+import Candidates from './components/candidate/CandidatesList';
+import JobOffers from './components/jobOffer/JobOffers';
 
 
 function App() {
@@ -31,6 +32,8 @@ function Routes() {
     { path: '/admin', element: <AdminPanel /> },
     { path: '/edit-interview/:id', element: <EditInterview /> },
     { path: '/candidates', element: <Candidates /> },
+    { path: '/job-offers', element: <JobOffers /> },
+
 
     { path: '*', element: <Navigate to="/signin" replace /> },
   ]);

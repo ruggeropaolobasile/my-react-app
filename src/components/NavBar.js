@@ -17,23 +17,20 @@ const NavBar = () => {
 
   return (
     <nav className={styles.navbar}> {/* Applica la classe 'navbar' */}
-      <ul>
-        <li>
-          <Link to="/">Dashboard</Link>
-        </li>
-        <li>
+      
+
+        <Link to="/">Dashboard</Link>
+
         <Link to="/candidates">Candidati</Link>
-        </li>
-        <li>
-          <Link to="/admin">Pannello di Amministrazione</Link>
-        </li>
-        <li>
-          <Link to="/signin">SignIN</Link>
-        </li>
-        <li>
-          <button onClick={logout}>Logout</button>
-        </li>
-      </ul>
+
+        <Link to="/admin">Pannello di Amministrazione</Link>
+     
+        <Link to="/job-offers">Offerte di lavoro</Link>
+
+        <Link to="/signin">SignIN</Link>
+        
+        <button onClick={logout}>Logout</button>
+
     </nav>
   );
 };

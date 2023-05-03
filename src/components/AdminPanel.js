@@ -1,6 +1,6 @@
 import React from 'react';
-import InterviewForm from './InterviewForm';
-import EmployeeList from './EmployeeList';
+import InterviewForm from './interview/InterviewForm';
+import EmployeeList from './employee/EmployeeList';
 
 const AdminPanel = () => {
     return (

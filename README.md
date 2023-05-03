@@ -1,3 +1,6 @@
+https://github.com/ruggeropaolobasile/my-react-app
+https://github.com/ruggeropaolobasile/MyWebApi
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
