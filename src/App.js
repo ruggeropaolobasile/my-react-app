@@ -13,6 +13,7 @@ import JobOffers from './components/jobOffer/JobOffers';
 import { addJobOffer } from './components/jobOffer/jobOffersService';
 import AddJobOffer from './components/jobOffer/AddJobOffer';
 
+
 function App() {
   return (
     <div className="App">
